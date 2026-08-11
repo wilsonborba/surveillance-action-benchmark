@@ -1,0 +1,28 @@
+project_name: surveillance-action-benchmark
+legacy_source_root: "/home/wilsonborba/Downloads/Posture and Skeleton "
+default_pose_backend: torchvision
+default_sequence_window_size: 32
+default_sequence_stride: 8
+default_max_persons: 2
+default_positive_threshold: 0.55
+default_preview_width: 1280
+default_preview_height: 720
+legacy_assets:
+  fight_pose_weights: "src/domain/models/pt/yolo11n-pose.pt"
+  fight_classifier_weights: "src/domain/models/pt/fight_classifier_lstm_v2.pt"
+  fall_detector_weights: "src_falling/domain/models/pt/falling_detector.pt"
+  fall_person_detector_weights: "src/domain/models/pt/yolo11n.pt"
+visualization:
+  font_scale: 0.7
+  line_thickness: 2
+  hud_alpha: 0.85
+  positive_color: [0, 0, 255]
+  negative_color: [80, 200, 120]
+  neutral_color: [255, 200, 0]
+  box_color: [64, 160, 255]
+labeling:
+  positive_keys:
+    fall: "1"
+    fight: "1"
+  negative_key: "0"
+  uncertain_key: "u"

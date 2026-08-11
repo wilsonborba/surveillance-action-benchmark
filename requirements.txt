@@ -1,0 +1,12 @@
+typer
+rich
+pydantic>=2
+pyyaml
+numpy
+pandas
+scikit-learn
+tqdm
+opencv-python
+torch
+torchvision
+ultralytics

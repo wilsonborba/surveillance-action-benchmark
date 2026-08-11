@@ -6,6 +6,7 @@ __pycache__/
 .venv/
 .env
 *.log
+*.egg-info/
 
 # local working context
 /docs/
